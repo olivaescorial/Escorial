@@ -1,0 +1,24 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Election and Democracy</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/rights2.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="box6">
+      <p align="center"; class="rs_design6">
+        <br><em>In addition, RA 9189 or the Overseas Absentee Voting Law entitles all Filipino citizens overseas,<br> not otherwise disqualified by law, and immigrants and permanent residents with affidavit of intent<br> to resume residence in the Philippines, to vote for elective positions on the national level:<br> President; Vice-President; Senators; and Party-List Representatives. <br></em></a></p>
+      <p align="left">
+        <iframe
+          width="780"
+          height="295"
+          src="https://www.youtube.com/embed/aayEAooF3Hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="button15"><button onclick>
+      <a href="{%url 'RightOfSuffrage5/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

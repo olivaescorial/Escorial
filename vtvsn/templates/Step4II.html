@@ -1,0 +1,93 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Step 4: Cast Your Ballot</title>
+    <script type="text/javascript">
+      function refresh() {
+      window.location.reload()
+      }
+      function confirm() {
+        var email = document.myForm.email;
+        var cncrn = document.myForm.concerns;
+        var msgs = document.myForm.messages;    
+
+        if (email.value == ""){
+           alert("Please fill out the form completely.");
+           return false;
+        }
+       if (cncrn.value == ""){
+           alert("Please select your concern that you want to address.");
+           return false;
+        }
+        if (msgs.value == ""){
+             alert("Please tell us more about your concerns about the site.");
+             return false;
+        }else
+        alert ("To send your feedback, you will be redirected to email.");
+        } 
+        function sendEmail(n,email,con,msg){
+        var to = "janielle.hembrador@gsfe.tupcavite.edu.ph";
+        var cc = "jaejishop@gmail.com";
+        var bcc = email;
+        
+        var con = document.getElementById('information');
+        var text = con.options[con.selectedIndex].text;
+
+        var body =
+        "Name: \t" +
+        n+ 
+        " " +
+        "\nWhat's your Concern?: \t" +
+        text+
+        " " +
+        "\nMessage: \t" +
+        msg +
+        " ";
+
+        var info = 
+        "mailto:" +
+        to +
+        "?cc=" +
+        cc +
+        "&bcc=" +
+        bcc +
+        "&subject=" +
+        escape(text) +
+        "&body="+
+        escape(body);
+        window.location = info;
+
+        }
+        
+  </script>
+    <style type="text/css"> 
+      body {
+      background-image: url('image/lmpic1.png');
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <form name="myForm" id="suggest" action = "#" method = "post" enctype="multipart/form-data" onsubmit="sendEmail(name.value,email.value,concerns.value,messages.value)" target="_blank">
+    
+    <div class="guidelast">
+      <p align="center"; class="guideslast_design"><em>Once you have completed this, you are done voting! Remember to take a photo of your <br>inked finger only when you're outside the polling station.</em></p></div>
+       <div class="comment-box">
+      <label><b>Feedback Form</b></label>
+      <p>Send us your feedback about our site! We'd love to hear from you.</p>
+      
+        <input type="text" name="name" placeholder="Name: (Optional)">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <p> What's this about?</p>
+        <select name=concerns id="information" required>
+          <option class="form_text" value ="" disabled selected="">Select your site-related concerns you want to address</option>
+          <option value="questions">Question/s about the website</option>
+          <option value="suggestion" >Suggestion/s about the website</option>
+          <option value="other">Other concerns about the website</option><br>
+        </select>
+        <br><br>
+        <textarea name="messages" placeholder="Go ahead, we're listening..." required></textarea>
+        <br>
+        <button type="submit" onclick="confirm()">SUBMIT</button>
+        <button type="reset" onclick="refresh()">RESET</button>
+      </div>
+  {% endblock %}

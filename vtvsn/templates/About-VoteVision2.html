@@ -1,0 +1,47 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+<form method="POST" action="{%url 'Donation/'%}">
+  {% csrf_token %}
+    <title>About • Vote Vision</title>
+  <style type="text/css">
+  body {
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+     }
+    </style>
+  <script type="text/javascript">
+    function setNewImageAbout1(){
+    document.getElementById("img1").src = "{%static 'image/about-hoe.png'%}";
+  }
+    function setOldImageAbout1(){
+    document.getElementById("img1").src = "{%static 'image/electionhistory.png'%}";
+  }
+    function setNewImageAbout2(){
+    document.getElementById("img2").src = "{%static 'image/about-ead.png'%}";
+  }
+    function setOldImageAbout2(){
+    document.getElementById("img2").src = "{%static 'image/democracy.png'%}";
+  }
+    function setNewImageAbout3(){
+    document.getElementById("img3").src = "{%static 'image/about-ras.png'%}";
+  }
+    function setOldImageAbout3(){
+    document.getElementById("img3").src = "{%static 'image/suffrage.png'%}";
+  }
+
+  </script>
+    <div class="guide2">
+      <p align="center"; class="guides_design2"><b><em>OUR FUTURE DEPENDS ON YOUR VOTE</em></b><br><em>Vote Vision is a platform that provides innovative, visual, and user-friendly information to assist every<br>Filipino by taking them through all they need to know about how elections in the Philippines <br>happen, their rights as voters, and what they need to do on election day.</em></p></div>
+    <p align="center"></p>
+    <div class="source_pics2"/>
+      <a href="{%url 'History/'%}"><img id="img1" onmouseover="setNewImageAbout1()" onmouseout="setOldImageAbout1()"
+        src="image/electionhistory.png"
+        alt="History" class="pics_format2"/></a><br>
+      <a href="{%url 'ElectionAndDemocracy/'%}"><img id="img2" onmouseover="setNewImageAbout2()" onmouseout="setOldImageAbout2()"
+        src="image/democracy.png"
+        alt="Election"class="pics_format2"/></a>
+      <a href="{%url 'RightOfSuffrage/'%}"><img id="img3" onmouseover="setNewImageAbout3()" onmouseout="setOldImageAbout3()"
+        src="image/suffrage.png"
+        alt="Rights"class="pics_format2"/></a></div>
+{% endblock %}

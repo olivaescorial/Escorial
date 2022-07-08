@@ -1,0 +1,20 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Elections and Democracy</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("{%static 'image/edpic2.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }  
+    </style>
+    <div class="ed4">
+      <p align="center"; class="ed_design4">
+        <br><br><em>• The role of non-government organizations in governance is recognized.<br><br>•  The party-list system of representation allows for marginalized and <br>underrepresented sectors to be represented in the national legislature.<br> The system serves as an attempt to depart from the personalistic character<br> of the political and electoral systems by giving focus to the party and its <br>issue-based platform.<br><br>• The Constitution and the 1991 Local Government Code (LGC) mandate <br>sectoral representation in the legislative bodies of local governments.<br><br>•  People's participation is also provided for by the <a href="{%url 'ElectionAndDemocracy5/'%}">Local Government Code</a><br> through representation in consultative bodies such as the local health boards,<br> local school boards, local peace and order councils, and local development<br> councils at all local levels.</em>
+      </p>
+    </div>
+    <div class="button8"><button onclick>
+      <a href="{%url 'ElectionAndDemocracy3/'%}" class="topnav_select">←</a></button>
+    </div>
+    {% endblock %}

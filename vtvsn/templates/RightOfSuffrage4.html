@@ -1,0 +1,23 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Right of Suffrage</title>
+    <style type="text/css"> 
+      body {
+      overflow: hidden;
+      background-image: url("/static/image/rights2.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+
+    <div class="rs4">
+      <p align="center"; class="rs_design4">
+        <br><br><em><b>Suffrage: “The right to vote, or the exercising of that right.” <br>–Andrew Heywood; Politics (Second Edition); p. 432. </b><br><br>The right to suffrage, as a human right, is related to the concept of <br><a href="{%url 'RightOfSuffrage5/'%}">democracy and people’s sovereignty.</a><br><br>Sovereignty is often defined as the principle of absolute and unlimited <br>power. Under the democratic 1987 Constitution, it is the people alone<br> who can exercise sovereignty. They can therefore make decisions that <br>are binding on all individual citizens, groups and institutions—including<br> the selection of leaders who will run the government. <br><br><b> Art. II, Sec. 1 of The 1987 Philippine Constitution: “The Philippines is<br> a democratic and republican State. Sovereignty resides in the people <br>and all government authority emanates from them.”</b> <br><br></a></em>
+      </p>
+    </div>
+    <div class="button13"><button onclick>
+      <a href="{%url 'RightOfSuffrage3/'%}" class="topnav_select">←</a></button>
+    </div>
+
+{% endblock %}

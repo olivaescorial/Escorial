@@ -1,0 +1,21 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Right of Suffrage</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/rights2.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="rs2">
+      <p align="center"; class="rs_design2">
+        <br><br><em><b>Art.25 (a-c) of International Covenant on Civil and Political Rights, (March 1976)</b><br><br>In a representative democracy, citizens have the right to make free and informed decisions.<br> Every  citizen shall have the right and the opportunity, without any of the distinctions mentioned <br>in article 2 and without unreasonable restrictions:
+        <br><br> (a) To take part in the conduct of public affairs, directly or through freely chosen representatives;
+        <br><br> (b) To vote and to be elected at genuine periodic elections which shall be by universal and equal <br> suffrage and shall be held by secret ballot, guaranteeing the free expression of the will of the electors; <br><br> (c) To have access, on <a href="{%url 'RightOfSuffrage3/'%}">general terms of equality</a>, to public service in his country.</a></em>
+      </p>
+    </div>
+    <div class="button11"><button onclick>
+      <a href="{%url 'RightOfSuffrage/'%}" class="topnav_select">←</a></button>
+{% endblock %}

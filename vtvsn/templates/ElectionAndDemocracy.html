@@ -1,0 +1,18 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Elections and Democracy</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("{%static 'image/edpic.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="ed">
+      <p align="center"; class="ed_design">
+        <br><em>Elections are part of the representational democracy system, which is supplemented by direct <br>democracy. The Constitution, from which all government authority emanates, ensures our <br>sovereignty as a sovereign people. Sovereignty, or the power to govern, is exercised both<br> directly and indirectly through politicians elected by the people to serve as their public <br> servants. Clean, orderly, and honest elections are thus a reflection of the people's will.<br><br>People's direct participation in government can take many different forms and categorizations.<br> Plebiscites, referenda, people's initiatives, recalls, and barrio assemblies are examples of these.<br> According to studies, when direct democracy methods are used, individuals experience a higher<br> level of freedom. The notion of "consent of the governed" underpins the representative democratic<br>framework, in which the people govern through elected representatives. As a result, government<br> <a href="{%url 'ElectionAndDemocracy2/'%}">officials who are chosen and elected by the people become slaves rather than masters</a> of the<br> people for whom they exercise power and authority.</em></p>
+    </div>
+    <div class="button5"><button onclick>
+      <a href="{%url 'About/'%}" class="topnav_select">←</a></button></div>
+{% endblock %}

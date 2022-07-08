@@ -1,0 +1,18 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Elections Accesibility</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/pdpic2.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="sp1">
+    <p align="center"; class="sp_design1">
+      <br><em><b>Elections are made accessible to all, including PWDs and senior citizens.</b><br><br>To be eligible to help, all participants must be of voting age. Members of the <br>EB who will be assisting these voters must also have completed sensitivity<br> training offered by the National Council on Disability Affairs and the<br> Commission on Human Rights.<br><br>There should be sign language interpreters or lists of candidates translated<br> into Braille in polling centers where voters with visual, speech, and hearing impairments are registered.<br><br>These measures are what RA 10366 and <a href="https://comelec.gov.ph/php-tpls-attachments/2016NLE/Resolutions/com_res_10108.pdf">Comelec Resolution No. 10484</a> seek<br> to provide PWDs, seniors, and even pregnant women. But there is much room <br>for improvement. It is one of the solutions that Comelec established and as per <br>the Comelec resolution, APPs are supposed to cater to PWDs, senior citizens, <br>and heavily pregnant women who struggles to vote.</em></p></div>
+    <div class="button17"><button onclick>
+      <a href="{%url 'SP/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

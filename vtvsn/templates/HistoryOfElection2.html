@@ -1,0 +1,21 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+  <title>History of Election</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("{%static 'image/historypic2.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="history2">
+      <p align="center"; class="history_index_design2">
+        <br><em>In 1978, he called for the election of an Interim Batasang Pambansa due to popular pressure.<br>The Kilusang Bagong Lipunan (KBL) was elected as the government's party. The election was <br>billed as restoring Philippine democracy, but Marcos' goal was to garner legitimacy for his <br>authoritarian government and establish a rubber-stamp legislature. The election defied <br>democratic procedures and was marked by the Marcos government's widespread use of electoral <br>manipulation to achieve victory. In 1980, local elections were marred by rampant terrorism, <br>bloodshed, and massive fraud. Both urban and rural residents were vocal in their criticism. <br>Marcos resigned himself to the election process in order to reclaim his legitimacy. The political<br> opposition boycotted the ceremony, instead launching a broad-based anti-dictatorship movement.<br><br>The time was marked by protests against the rule of the late President Benigno Aquino. Elections <br> for the Batasang Pambansa in 1984 were boycotted by the political opposition. The exercise, which <br> was once again boycotted by the political opposition, was meant to shift public attention away from <br>the killing of Senator Benigno Aquino. Nonetheless, the time was marked by Marcos' waning popularity <br> and the people's developing <a href="{%url 'History3/'%}">political opposition</a> to his tyranny. </em>
+      </p>
+    </div>
+    <div class="button2"><button onclick>
+      <a href="{%url 'History/'%}" class="topnav_select">←</a></button>
+    </div>
+
+{% endblock %}

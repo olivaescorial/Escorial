@@ -1,0 +1,25 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Election and Democracy</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("{%static 'image/edpic.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="box5">
+      <p align="center"; class="ed_design5">
+        <br><em>• There is also the LGC-mandated barangay assembly (peoples’ assembly or meeting of all <br>over-15-year-old residents of the barangay. The assembly has the power to hear and pass<br> upon the report of the Sangguniang Barangay’s (SB) performance, It is also recommended <br>measures for legislation by the SB.</em></p>
+      <p align="center">
+        <iframe
+          width="550"
+          height="200"
+          src="https://www.youtube.com/embed/lZO1Y8fjdyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <p align="center"; class="ed_design5">
+        <em>• The Barangay Assembly is one manifestation of people’s power and a (truly) direct and<br> participatory democratic exercise and the latest development in upholding the right to suffrage<br> is Republic Act 9189, which provides for a system of absentee voting for qualified Filipinos abroad.</em></p>
+    <div class="button9"><button onclick>
+      <a href="{%url 'ElectionAndDemocracy4/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'boiler.html' %}
+{%block content%}
+    <title>Vote Vision</title> 
+    <style type="text/css">
+    body {
+      background-image: url("/static/image/votevision.png");
+      background-repeat: no-repeat;
+    </style>
+    <script>
+      function EventHandler(){
+        alert('Welcome to Vote Vision');}
+    </script>
+    <div class="comment-box1">
+      <label><b>GET UPDATES FROM VOTE VISION!</b></label><br>
+      <p>Be sure to visit our website for all the latest updates on voting, government, and other related concerns.</p>
+        <br>
+        <input type="email" name="email" placeholder="EMAIL" required>
+        <button onclick="refresh" type="submit">SUBSCRIBE</button>
+      </form>
+{% endblock %}

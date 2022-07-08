@@ -1,0 +1,19 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Step 2: Get Your Ballot</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/s2pic.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="step2">
+      <p align="center"; class="step2_design">
+        <br><br><em> After that, go to the chairperson of the board of elections inspectors to collect<br>your ballot, ballot secrecy folder, and marking pen. The Comelec's marking <br>pens are built for its ballots and VCMs, so you won't need to bring your own.<br><br>If you are in a region where the Comelec's fingerprint scanning machine is in<br> use, the BEI chairperson will give you these materials when you get a<br> verification receipt from the machine.<br><br><b>What is ballot paper?</b><br><br>A ballot paper is a piece of paper that lists the names of the candidates running<br> for office, as well as party names and symbols. The ballot paper had previously <br>been used. Electronic voting machines (EVMs) are now often utilized to record <br>votes.<br></em></p>
+    </div>
+    <div class="button19"><button onclick>
+      <a href="{%url 'Guides/'%}" class="topnav_select">←</button></a>
+    </div>
+{% endblock %}

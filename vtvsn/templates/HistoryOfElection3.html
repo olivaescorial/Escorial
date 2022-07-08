@@ -1,0 +1,22 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>History of Election</title>
+    <style type="text/css"> 
+      body {
+      overflow: hidden;
+      background-image: url("{%static 'image/historypic.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="history3">
+      <p align="center"; class="history_index_design3">
+        <br><em>In 1986, Marcos called for quick presidential elections in response to internal and international<br>pressure. In the same year, the EDSA rebellion was sparked by extensive election rigging and <br> irregularities, as well as a deteriorating social, political, and economic order. The People Power<br>Revolution of 1986 resulted in the deposition of Marcos, the demise of KBL, and the election of<br> Corazon Aquino as President.<br><br>Three major electoral exercises were used as part of Aquino's program to restore democracy,<br> promote stability, and establish political legitimacy: A multi-party system was established by the<br> 1987 Constitution. People voted for a president in synchronized national and local elections in 1992.<br>The elimination of "trapo", or <a href="{%url 'History4/'%}">traditional politics,</a> was a major campaign theme. In 1995, new type <br> of fraud known as "dagdag-bawas" was used or the subtraction of votes from one candidate to be <br>added to the opposing candidate, was used.</em>
+      </p>
+    </div>
+    <div class="button3"><button onclick>
+      <a href="{%url 'History2/'%}" class="topnav_select">←</a></button>
+  </div>
+  
+{% endblock %}

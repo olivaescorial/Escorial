@@ -1,0 +1,25 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Step 1: Identify Yourself</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/s1pic.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+  </head>
+    <div class="box7">
+      <p align="center"; class="step1_design">
+        <br><em>Check the voters' list posted by your polling precinct for your name. This is<br> where you'll confirm that you're a registered voter in a Comelec-designated<br> location, as well as the room in the precinct you will vote in. The Comelec's<br> new voter registration verification machine (VRVM), which uses live<br> fingerprint scanning technology to verify a voter's identity and whether or <br> not he or she is registered in a certain precinct, will also be used in some<br> locations. Find out if you're one of the 14 pilot locations that will be adopting<br> this, as well as what to expect. Below is a quick demonstration of how to use<br> the VRVMs: </em></p>
+      <p align="center">
+        <iframe
+          width="400"
+          height="150"
+          src="https://www.youtube.com/embed/BGQYtmN-Y0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="button17"><button onclick>
+      <a href="{%url 'Guides2/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

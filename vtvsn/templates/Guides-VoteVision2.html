@@ -1,0 +1,18 @@
+{% extends 'boiler.html' %}
+{%block content%}
+    <title>Guides • Vote Vision</title>
+    <style type="text/css"> 
+      body {
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+    </style>
+    <div class="guide1">
+      <p align="center"; class="guides_design1"><b>Your step-by-step guide to voting in the elections on May 9, 2022.</b><br><em>You get only one ballot and one chance to vote. Here’s a brief guide on what to expect and how to <br>prepare, based on demonstrations by the Commission on Elections (Comelec)</em>.</p></div>
+      <div class="guidestext1">
+        <p align="center"; class="guidestext_design1">
+          <em><b>Before heading out to vote</b><br><br><b>What time and where to vote:</b> All over the country, polls will open at 6 am and close at 6 pm. The Comelec decided to extend voting hours <br> as it expects some queuing to take place since there is an estimated maximum of about 1,000 voters per vote-counting machine (VCM).<br><br>Double check and familiarize yourself with the location of your polling precinct, or where you will cast your vote. You can check this online <br>through the Comelec’s <a href="https://comelec.gov.ph/?r=VoterRegistration/VoterVerification/precinct_finder">precinct finder</a> or its hotline at 526-7769.<br><br><b>Prepare before the day:</b> Prepare your list of who to vote for before election day. The Comelec wants voters to know who to vote for before <br>May 13, to avoid making accidental markings on ballots, which may be read by VCMs.<br><br>You can bring your list of who to vote for, but remember you cannot bring campaign materials. On voting day, bring water to keep cool during<br> the summer heat as lines can get long.<br><br>Voters needing assistance, such as <a href="{%url 'SP/'%}">persons with disabilities</a>, can also bring a companion to help them. In polling places, teachers serving as <br>election workers are also on stand by to assist voters.</em></p>
+      </div>
+      <div class="button1"><button onclick>
+        <a href="{%url 'Guides2/'%}" class="topnav_select1">→</a></button>
+    </div>
+{% endblock %}

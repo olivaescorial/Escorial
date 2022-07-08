@@ -1,0 +1,18 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Elections Accesibility</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/pdpic.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+     }
+    </style>
+    <div class="sp">
+      <p align="center"; class="sp_design">
+        <br><br><em><b>Elections are made accessible to all, including PWDs and senior citizens.</b><br><br><a href="https://comelec.gov.ph/">Republic Act (RA) 10366</a> or “An Act Authorizing the Comission on Elections<br> to Establish Precincts Assigned to Accessible Polling Places Exclusively for<br> Persons With Disabilities and Senior Citizens,” signed into law in 2013, was established precisely for this purpose. <br><br><b>What are the things that assistance can help them?</b><br><br><a href="{%url 'SP2/'%}">If a person with disabilities, a senior citizen, or an illiterate needs assistance<br> filling out a ballot, the following people are authorized to help them:</a><br><br>• A relative within the 4th degree of consanguinity or affinity<br>• A person who is of their confidence belonging to the same household<br>• A member of the Electoral Board (EB) present at the voting center</em></p></div>
+    <div class="button16"><button onclick>
+      <a href="{%url 'Guides/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

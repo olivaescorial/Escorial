@@ -1,0 +1,20 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Step 4: Cast Your Ballot</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/s4pic.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="step4">
+      <p align="center"; class="step4_design">
+        <br><em>After filling out your ballot, keep it inside the ballot secrecy folder. Bring this<br>to the VCM and insert it into the machine.<br><br>Do not leave right away. Wait for the machine to process your ballot. Once<br> this is done, a poll clerk will mark your finger with indelible ink and will give<br> you your voting receipt to review.<br><br>Check your voting receipt to see if it correctly reflects who you voted for.<br><br>If the receipt does not match who you voted for, bring it to the BEI to register<br> your complaint. This will then be put on record.<br><br>If the receipt matches who you voted for, drop it in the voting receipt box once<br> done. Voters are not allowed to leave precincts with their voting receipt.<br> The Comelec says this is to <a href="{%url 'Step4II/'%}">protect the secrecy of the ballot</a> and deter vote <br>buying.</em>
+      </p>
+    </div>
+    <div class="button22"><button onclick>
+      <a href="{%url 'Guides2/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

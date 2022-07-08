@@ -1,0 +1,20 @@
+{% load static %}
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{%static 'cssdesign.css' %}">
+    <meta charset="UTF-8" />
+    <meta name="Vote Vision" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="/static/image/vvicon.png">
+    <link rel="stylesheet" type="text/css" href="{%static 'cssdesign.css' %}">
+</head>
+<body>
+       <div class="top">
+      <a href="{% url 'Homepage/'%}" class="topnav_select"><b>HOME</b></a>
+      <a href="{% url 'About/'%}" class="topnav_select"><b>ABOUT</b></a>
+      <a href="{% url 'Donation/'%}" class="topnav_select"><b>DONATE</b></a>
+      <a href="{% url 'Guides/'%}" class="topnav_select" style="padding-right: 40px;"><b>GUIDES</b></a>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

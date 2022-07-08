@@ -1,0 +1,19 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Elections and Democracy</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("{%static 'image/edpic.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="ed3">
+      <p align="center"; class="ed_design3">
+        <br><em>Elections are part of the representational democracy system, which is supplemented by direct <br>Our Constitution mandates alternative tools to further democratization and citizen participation <br>in governance, in addition to voting in elections. <br><br>•  The system of initiative and referendum gives the people the power to directly enact, propose,<br> and reject laws both at the local and national levels.<br><br>•  Also, through initiative, the people may directly propose amendments to the Constitution by a <br>petition of at least 12% of the total number of registered voters, in by which 3% of registered<br> voters in each legislative district are represented.<br><br>• Through plebiscites or referenda, the people approve or reject the call for a constitutional<br> convention to propose changes to the Constitution, approve or reject proposed changes in the<br> Constitution and, at both the local and national levels, <a href="{%url 'ElectionAndDemocracy4/'%}">express their will with respect to certain<br> issues. </a></em>
+      </p>
+    </div>
+    <div class="button7"><button onclick>
+      <a href="{%url 'ElectionAndDemocracy2/'%}" class="topnav_select">←</a></button></div>
+{% endblock %}

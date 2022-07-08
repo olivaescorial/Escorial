@@ -1,0 +1,20 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Step 3: Choose Your Candidate</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/s3pic.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="step3">
+      <p align="center"; class="step3_design">
+        <br><br><em> Ballots are divided by positions up for election: senator, House of Representatives<br> member, mayor, vice mayor, and party-list.<br><br><b>Vote only for the number indicated by each position:<br><br>•  Senator</b> – vote for a maximum of 12 candidates<br><b>•  House of Representatives</b> – vote for a maximum of 1 candidate<br><b>•  Mayor</b> – vote for a maximum of 1 candidate<br><b>•  Vice mayor</b> – vote for a maximum of 1 candidate<br><b>•  Party-list</b> – vote for a maximum of 1 group<br><br>Ballots will also contain portions for members of the sangguniang panlalawigan, sangguniang panglungsod, and sangguniang bayan, whose number of maximum<br> posts up for <a href="{%url 'Step3II/'%}">grabs varies per area.</a></em>
+      </p>
+    </div>
+    <div class="button20"><button onclick>
+      <a href="{%url 'Guides2/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

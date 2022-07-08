@@ -1,0 +1,22 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>History of Election</title>
+    <style type="text/css"> 
+      body {
+      overflow: hidden;
+      background-image: url("/static/image/historypic.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto
+     }
+    </style>
+    <div class="history">
+      <p align="center"; class="history_index_design">
+        <br><em>During the Spanish and American colonial periods in the Philippines, elections were initially used. However, the process was only open to male, educated,<br> and landowner voters, and it was more of a ceremonial than a genuine democratic system. Sectoral resistance and political engagement were only fulfilled in 1937, when Act 4112, guaranteeing women the right to vote,<br> was passed, and peasant movements acquired genuine participation in political parties and government offices. The 1946 election for President<br> and Vice-President of the Republic, as well as members of the Senate<br> and House of Representatives, was the first democratic election  following<br> WWII. From then on, the country ran under a two-party system, with the Nacionalista Party and the Liberal Party voting for power in subsequent <br>elections.<br><br>The 1935 Constitution was scrapped when Marcos proclaimed martial law in 1972. An Interim Batasang Pambansa was formed, and a new constitution (1973) was adopted. Under transition rules, Marcos reigned as both president and prime minister, with legislative powers—a  <a href="{%url 'History2/'%}">one-man dictatorship.</a></em>
+      </p>
+    </div>
+    <div class="button"><button onclick>
+      <a href="{%url 'About/'%}" class="topnav_select">←</a></button>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'boiler.html' %}
+{%block content%}
+ <title>Vote Vision • Donation</title>
+         <div class="guide1">
+      <p align="center"; class="guides_design1" ><b><em>Your gift can make a difference.</em></b><br><em>Vote Vision not only connects with voters; it also wants to assist charities in the Philippines with funding;<br>and the website typically supports charities for poverty prevention or relief.</em></p></div>
+      <div class="radiobutton">
+        <center>
+            <fieldset>
+          <legend><b>Donor Information</b></legend>
+          <p>Donor ID:</p>
+          <p>Donation ID:</p>
+          </center>
+      </fieldset>
+     <center>
+            <fieldset>
+                <legend><b>Payment Details</b></legend>
+      <p>Type of Donation</p>
+      <label class="radiobutton"><input type="radio" name="radio"/>One-time</label>
+      <label class="radiobutton"><input type="radio" name="radio"/>Monthly</label><br>
+      <p>Donate Now</p>
+        <select name=concerns id="information" required>
+          <option class="" value ="" disabled selected="">Designation of your donation</option>
+          <option value="ftc">Feed the Children</option>
+          <option value="ffth">Food for the Hungry</option>
+          <option value="wfp">World Food Programme</option>
+          <option value="aah">Action Against Hunger</option>
+          <option value="rahp">Rise Against Hunger Philippines</option>
+          <option value="o">Other</option>
+        </select>
+        <input class="radiobutton" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31" required/><br><br>
+        <button type="submit" onclick="location.href='Payment/'">SUBMIT</button>
+        <button type="reset" onclick="refresh()">CLEAR</button>
+         </center>
+    </fieldset>
+    </div>
+{% endblock %}

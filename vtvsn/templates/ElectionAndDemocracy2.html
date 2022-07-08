@@ -1,0 +1,19 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Elections and Democracy</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("{%static 'image/edpic2.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="ed2">
+      <p align="center"; class="ed_design2">
+        <br><em>In a representative democracy, citizens have the right to make free and informed decisions<br> about who to vote for, and those decisions must be guided by the actual welfare of the majority.<br> The type of government that will serve citizens will be determined by each individual voter's<br> political option and decision.<br><br><b>Specific Mechanisms</b><br><br>• Since the enactment of the 1987 Constitution, elections for President and Vice-president are<br> held every six years, while elections for Senators and members of the House of Representatives<br> and local government officials meet every three years.<br><br>• At the local level, <b>barangay</b> elections and <b>Sangguniang Kabataan</b> elections are also held<br> periodically.<br><br>•  From 1993 onwards elections for the Autonomous Region of Muslim Mindanao (ARMM)<br> were held. The 1996 and the 2008 ARMM elections also served as a pilot-test for the<br> automated <a href="{%url 'ElectionAndDemocracy3/'%}">system of elections. </a></em>
+      </p>
+    </div>
+    <div class="button6"><button onclick>
+      <a href="{%url 'ElectionAndDemocracy/'%}" class="topnav_select">←</a></button></div>
+{% endblock %}

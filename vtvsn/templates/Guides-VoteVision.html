@@ -1,0 +1,55 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Guides • Vote Vision</title>
+  <style type="text/css">
+    body{
+      cursor: url("others/lightgreencursor.cur"), auto;
+    }
+  </style>
+  <script type="text/javascript">
+    function setNewImageGuides1(){
+    document.getElementById("img1").src = "{%static 'image/guides-iys.png'%}";
+  }
+    function setOldImageGuides1(){
+    document.getElementById("img1").src = "{%static 'image/Step1.png'%}";
+  }
+     function setNewImageGuides2(){
+    document.getElementById("img2").src = "{%static 'image/guides-gyb.png'%}";
+  }
+    function setOldImageGuides2(){
+    document.getElementById("img2").src = "{%static 'image/Step2.png'%}";
+  }
+     function setNewImageGuides3(){
+    document.getElementById("img3").src = "{%static 'image/guides-cyc.png'%}";
+  }
+    function setOldImageGuides3(){
+    document.getElementById("img3").src = "{%static 'image/Step3.png'%}";
+  }
+     function setNewImageGuides4(){
+    document.getElementById("img4").src = "{%static 'image/guides-cyb.png'%}";
+  }
+    function setOldImageGuides4(){
+    document.getElementById("img4").src = "{%static 'image/Step4.png'%}";
+  }
+  </script>
+    <div class="guide3">
+      <p align="center"; class="guides_design3"><b>AT THE POLLING PLACE</b><br><em>In voting places, you can expect the following to take place:</em></p></div>
+    <div class="source_pics3">
+      <a href="{%url 'Step1/'%}"><img id="img1" onmouseover="setNewImageGuides1()" onmouseout="setOldImageGuides1()"
+        src="image/Step1.png"
+        class="pics_format3"/></a>
+      <a href="{%url 'Step2/'%}"><img id="img2" onmouseover="setNewImageGuides2()" onmouseout="setOldImageGuides2()"
+        src="image/Step2.png"
+        class="pics_format3"/></a>
+      <a href="{%url 'Step3/'%}"><img id="img3" onmouseover="setNewImageGuides3()" onmouseout="setOldImageGuides3()"
+        src="image/Step3.png"
+        class="pics_format3"/></a>
+      <a href="{%url 'Step4/'%}"><img id="img4" onmouseover="setNewImageGuides4()" onmouseout="setOldImageGuides4()"
+        src="image/Step4.png"
+        class="pics_format3"/></a>
+    </div>
+    <div class="button0"><button onclick>
+      <a href="{%url 'Guides/'%}" class="topnav_select3">←</a></button>
+    </div>
+{% endblock %}

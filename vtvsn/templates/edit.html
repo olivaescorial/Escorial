@@ -1,0 +1,48 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+
+<form method="POST" action="/vtvsn/edit/update/{{ adddnt.id }}">
+{% csrf_token %}
+ <title>Vote Vision • Donation</title>
+
+ <div class="guide1">
+    <p align="center"; class="guides_design1" ><b><em>Your gift can make a difference.</em></b><br><em>Vote Vision not only connects with voters; it also wants to assist charities in the Philippines with funding;<br>and the website typically supports 
+        <div class="radiobutton"><center>
+            <fieldset class="radiobutton">
+                <legend><b>Donor Information</b></legend>
+                <br><br>
+                <input type="text" name="donor_name" value="{{adddnt.donor_name}}" placeholder="Lastname, Firstname MI."/>
+                <input type="tel" name="contact_no" value="{{adddnt.contact_no}}" pattern="[0-9]{11}" placeholder="Contact Number" required /><br>
+                <input type="email" name="donor_email" value="{{adddnt.donor_email}}"  placeholder="Email Address" required/>
+                <input type="text" name="donor_address" value="{{adddnt.donor_address}}" placeholder="City/Municipality, Province" required/><br>
+                {% for item in addDonation%}
+                <select name="donation_designation" required>
+                	<option class="form_text" value ="{{item.donation_designation}}" disabled selected="">Designation of your donation</option>
+			          <option value="Feed the Children"></option>
+			          <option value="Food for the Hungry"></option>
+			          <option value="World Food Programme"></option>
+			          <option value="Action Against Hunger"></option>
+			          <option value="Rise Against Hunger Philippines"></option>
+			          <option value="Other"></option>
+			        </select>
+			    	<input type="text" name="donation_amount" value=">{{item.donation_amount}}" placeholder="Donation Amount" required></textarea>
+			    	<select name="payment_services" value="{{item.payment_services}}" required>
+			          <option class="form_text" value ="" disabled selected="">Select prepared payment service</option>
+			          <option value="Grab Pay"></option>
+			          <option value="GCash"></option>
+			          <option value="Paypal"></option>
+			      </select>
+			      <input type="tel" name="eWallet_number" value="{{item.eWallet_number}}" placeholder="eWallet Number" pattern="[0-9]{11}" required/>
+			      {% endfor %}
+
+
+        		<button type="submit" class="button">SAVE</button>	
+			</fieldset>
+		</div>
+	</div>
+	<br>
+		
+	</div>
+</form>
+{%endblock%}

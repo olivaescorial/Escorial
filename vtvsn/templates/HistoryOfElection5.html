@@ -1,0 +1,28 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>History of Election</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("{%static 'image/historypic.png'%}");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="box4">
+      <p align="center"; class="history_index_design5">
+        <em>However, the 2007 elections saw the introduction of trapos into the party-list system, diverting votes<br> away from the best performers in party-list elections. This newfound interest in the party-list system <br>among traditional politicians was ironically sparked by the success of party-list representatives in <br>securing equitable treatment from their district colleagues.</em>
+      </p>
+      <p align="center">
+        <iframe
+          width="550"
+          height="200"
+          src="https://www.youtube.com/embed/dsBTCfuCrMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p align="center"; class="history_index_design5">
+        <em>The struggle for our independence and democratic government has repeatedly resulted in the political<br> system, political leaders, and electorate we have today. Elections have always been a prominent feature <br>and mechanism in practice, and it was anticipated that with a better-informed electorate, they would<br> continue to function as vehicles for true democratic administration.</em>
+      </p>
+    </div>
+    <div class="button4"><button onclick>
+      <a href="{%url 'History4/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

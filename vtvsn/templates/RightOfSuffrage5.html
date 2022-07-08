@@ -1,0 +1,20 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Right of Suffrage</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/rights.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+}
+    </style>
+    <div class="rs5">
+      <p align="center"; class="rs_design5">
+        <br><em><b><a href="{%url 'RightOfSuffrage6/'%}">Qualifications and Disqualifications of a Voter</a></b><br><br>All citizens of the Philippines, eighteen years of age or over, and residents of the Philippines<br>for one year and for at least six months in the city or municipality wherein he/she proposes <br> to vote immediately preceding the election are qualified to vote. <br><br><b>The following shall be disqualified from voting:</b><br>a. Any person who has been sentenced by final judgment to suffer imprisonment for not less<br> than one year. However, he/ she may reacquire the right to vote upon expiration of five years<br> after service of sentence.<br><br>b. Any person who has been adjudged by final judgment by competent court or tribunal of having<br> committed any crime involving disloyalty to the duly constituted government such as rebellion, sedition, <br>violation of the anti-subversion and firearms laws, or any crime against national security, unless restored <br>to his/her full civil and political rights in accordance with law: Provided, That he/she shall regain his right<br> to vote automatically upon expiration of five years after service of sentence.<br><br>c. Insane or incompetent persons as declared by competent authority. </em>
+      </p>
+    </div>
+    <div class="button14"><button onclick>
+      <a href="{%url 'RightOfSuffrage4/'%}" class="topnav_select">←</a></button>
+    </div>
+{% endblock %}

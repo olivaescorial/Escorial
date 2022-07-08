@@ -1,0 +1,18 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Step 3: Choose Your Candidate</title>
+    <style type="text/css"> 
+      body {
+      background-image: url("/static/image/s3pic.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="step3II">
+      <p align="center"; class="step3II_design">
+        <br><br><em>Take note, you cannot vote for more candidates than what it listed beside each<br>position as this can invalidate your vote. You can vote under, or abstain from <br>choosing the maximum number of candidates.<br><br>The Comelec has already posted sample images of ballots per area for voters<br> to familiarize themselves with. Check them here.<br><br>As you vote, refrain from placing extra markings on your ballot. The Comelec<br> suggests filling out the entire circle beside a candidate’s name to make sure it<br> is counted by the VCM.<br><br>Do NOT use your phone while you vote and do NOT take a picture of your<br> ballot. This may be considered an election offense.</em></p></div>
+    <div class="button21"><button onclick>
+      <a href="{%url 'Guides2/'%}" class="topnav_select">←</button></a>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+    <title>Right of Suffrage</title>
+    <style type="text/css"> 
+      body {
+      overflow: hidden;
+      background-image: url("/static/image/rights.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="rs3">
+      <p align="center"; class="rs_design3">
+        <br><em><b>Art. V, Sec. 1-2 of The 1987 Philippine Constitution</b><br><br> 1. Suffrage may be exercised by all citizens of the Philippines not otherwise disqualified<br> by law.<br><br>2. The Congress shall provide a system for securing the secrecy and sanctity of ballot as<br> well as a system for absentee voting by qualified Filipinos abroad. The congress shall<br> also design a procedure for the disabled and the illiterates to vote without the assistance<br> of other persons. Until then, they shall be allowed to <a href="{%url 'RightOfSuffrage4/'%}">vote under existing laws</a> and such<br> rules as the Commission on elections may promulgate to protect the secrecy of the ballot.<br><br></a></em>
+      </p>
+    </div>
+    <div class="button12"><button onclick>
+      <a href="{%url 'RightOfSuffrage2/'%}" class="topnav_select">←</a></button>
+</div>
+{% endblock %}

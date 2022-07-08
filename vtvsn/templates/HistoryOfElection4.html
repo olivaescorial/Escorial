@@ -1,0 +1,21 @@
+{% extends 'boiler.html' %}
+{%block content%}
+{%load static%}
+  <title>History of Election</title>
+    <style type="text/css"> 
+      body {
+      overflow: hidden;
+      background-image: url("/static/image/historypic2.png");
+      background-repeat: no-repeat;
+      cursor: url("others/lightgreencursor.cur"), auto;
+      }
+    </style>
+    <div class="history4">
+      <p align="center"; class="history_index_design4">
+        <br><em>The first party-list elections were held in 1998. With overwhelming public support, Joseph<br> Estrada was elected President of the Republic. In January 2001, EDSA 2, a follow-up to<br> People Power in 1986, ousted Estrada from Malacaang and installed Gloria Macapagal-Arroyo <br>as the next president. Senatorial and local elections were conducted four months later,<br> resulting in a decisive success for the new administration when its allies won a majority in<br> both Houses of Congress. Along with gaining the majority of the elected local positions,<br> Congress was elected. President Arroyo, on the other hand, had become so unpopular that<br> she just narrowly defeated her closest competitor, actor-turned-politician Fernando Poe,<br> Jr., in the 2004 election. President Arroyo was challenged with the "Hello, Garci" incident<br> a year later, in June 2005, in which she was accused of taping conversations with COMELEC<br> Commissioner Garciliano with the goal of rigging the elections. The information was leaked<br> to the media. <br><br>While President Arroyo managed to stay in power, she was unable to win over the majority<br> of Filipinos, culminating in a <a href="{%url 'History5/'%}">landslide victory for the opposition in the 2007 senatorial<br> elections.</a></em>
+      </p>
+    </div>
+    <div class="button00"><button onclick>
+      <a href="{%url 'History3/'%}" class="topnav_select">←</a></button>
+    </div>
+  {% endblock %}

@@ -1,0 +1,44 @@
+{%extends 'boiler.html' %}
+{%block content%}
+
+<form method="POST">
+{% csrf_token %}
+<title>Vote Vision • Donation</title>
+
+<div class="guide1">
+    <p align="center"; class="guides_design1" ><b><em>Your gift can make a difference.</em></b><br><em>Vote Vision not only connects with voters; it also wants to assist charities in the <br>Philippines with funding; and the website typically supports.
+
+        <div class="radiobutton"><center>
+            <fieldset>
+                <legend><b>Donor Information</b></legend>
+                <label><i>Please complete the form below to make <br>your donation to Vote Vision.</i></label>
+                <br><br>
+                <input type="date" name="donation_date" required>
+        <select name="donation_designation" required>
+          <option class="form_text" value ="" disabled selected="">Donation Designation</option>
+          <option value="Feed the Children">Feed the Children</option>
+          <option value="Food for the Hungry">Food for the Hungry</option>
+          <option value="World Food Programme">World Food Programme</option>
+          <option value="Action Against Hunger">Action Against Hunger</option>
+          <option value="Rise Against Hunger Philippines">Rise Against Hunger Philippines</option>
+          <option value="Other">Other</option>
+        </select>
+         <input type="text" name="donation_amount" placeholder="Donation Amount" required>
+        <select name="payment_services" required>
+          <option class="form_text" value ="" disabled selected="">Payment Service</option>
+          <option value="Grab Pay">Grab Pay</option>
+          <option value="GCash">GCash</option>
+          <option value="Paypal">Paypal</option>
+      </select>
+      <input type="tel" name="eWallet_number" placeholder="eWallet Number" pattern="[0-9]{11}" required/><br>
+
+        <br>
+        <button type="submit" class="radiobutton" name="btn" id="btn">SUBMIT</button>
+         <button type="reset" class="radiobutton">CLEAR</button>
+
+		</fieldset>
+		</div>
+	</center>
+</div>
+</form>
+{%endblock%}

@@ -1,0 +1,69 @@
+{%extends 'boiler.html' %}
+{%block content%}
+
+<title>Vote Vision • Donation</title>
+<br><br><br><br><br><br>
+		<form>
+			<table class="styled-table" border="5" align="center">
+			<thead>
+            <tr>
+              <th colspan="10">Donor Summary: {{adddnt.donor_name}}</th>
+          </tr>
+          <tr>
+            <td>Donor Name</td>
+            <td>Contact Number </td>
+            <td>Email Address</td>
+            <td>Address</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+        <tr>
+        	<td>{{adddnt.donor_name}}</td>
+			<td>{{ adddnt.contact_no}}</td>
+			<td>{{ adddnt.donor_email}}</td>
+			<td>{{ adddnt.donor_address}}</td>
+			<td> <a class="dbutton" onclick="checker" href="/vtvsn/{{adddnt.id}}/showPage/">DONATE AGAIN</a> |
+        <a class="dbutton" onclick="checker" href="/vtvsn/edit/{{adddnt.id}}/">EDIT</a><br>
+
+        </tr>
+        </tr>
+    </td>
+</tr>
+    </tbody>
+</table><br>
+
+			<table class="styled-table" border="5" bordercolor="" align="center">
+			<thead>
+            <tr>
+
+              <th colspan="10">Donation Summary: {{adddnt.donor_name}}</th>
+          </tr>
+          <tr>
+          	<td>Donation Number</td>
+            <td>Donation Date</td>
+            <td>Designation</td>
+            <td>Amount</td>
+            <td>Service</td>
+            <td>eWallet</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+			{% for item in addDonation%}
+			<td>{{forloop.counter}}</td>
+			<td>{{item.donation_date}}</td>
+			<td>{{item.donation_designation}}</td>
+			<td>{{item.donation_amount}}</td>
+			<td>{{item.payment_services}}</td>
+			<td>{{item.eWallet_number}}</td>
+			<td>
+				<a class="canceldbutton" onclick="checker" href="/vtvsn/{{adddnt.id}}/canceldonation">CANCEL</a>
+        </tr>
+        </tr>
+    </td>
+</tr>
+	{%endfor%}
+    </tbody>
+</table>
+</form>
+
+{%endblock%}
